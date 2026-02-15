@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>حاسبة الاعدادية | معرفة الدرجة المطلوبة في الامتحان النهائي</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Egyptian flag header -->
+  <div class="egypt-header"></div>
+
+  <div class="container">
+    <!-- Hero section -->
+    <div class="hero-section">
+      <h1><i class="fas fa-calculator"></i> حاسبة الاعدادية</h1>
+      <p>اعرف بالظبط المطلوب منك في الامتحان النهائي عشان توصل للدرجة اللي حلمت بيها!</p>
+    </div>
+
+    <!-- Calculator card -->
+    <div class="glass-card">
+      <div class="calculator-form">
+        <div class="form-group">
+          <label class="form-label" for="current">
+            <i class="fas fa-chart-line"></i> المعدل الحالي (مجموع الترم الاول)
+          </label>
+          <input
+            type="number"
+            id="current"
+            class="form-control"
+            placeholder="مثلاً: 85"
+            min="0"
+            max="100"
+            inputmode="decimal"
+          >
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="target">
+            <i class="fas fa-bullseye"></i> الدرجة المستهدفة النهائية (المجموع الكلي)
+          </label>
+          <input
+            type="number"
+            id="target"
+            class="form-control"
+            placeholder="مثلاً: 90"
+            min="0"
+            max="100"
+            inputmode="decimal"
+          >
+        </div>
+
+        <button class="btn-calculate" onclick="calculate()">
+          <i class="fas fa-equals"></i> احسب الدرجة المطلوبة في الامتحان النهائي
+        </button>
+
+        <div class="result-container">
+          <div id="result" class="result-box">
+            <div class="result-title">الدرجة المطلوبة في الامتحان النهائي:</div>
+            <div id="result-value" class="result-value">--%</div>
+            <div id="result-text" class="result-text"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Tips section - Smaller -->
+    <div class="glass-card tips-section">
+      <div class="tips-header">
+        <i class="fas fa-lightbulb"></i>
+        <span>نصائح دراسة لطلاب الاعدادية</span>
+      </div>
+      <div class="tip-box-small">
+        <div id="tip-text" class="tip-text-small">
+          ركز على حل نماذج الامتحانات السابقة – 70% من الأسئلة بتكون بنفس النمط!
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <div class="footer">
+    <p>تم التطوير بواسطة <strong>Saif</strong> | لمساعدة طلاب الاعدادية وسنوات النقل في مصر 🇪🇬</p>
+
+  </div>
+   <!-- WhatsApp Share Button -->
+    <div class="share-section">
+      <div class="share-box">
+        <i class="fab fa-whatsapp"></i>
+        <span>شارك الحاسبة مع زملائك!</span>
+        <button class="btn-share" onclick="shareOnWhatsApp()">
+          <i class="fas fa-paper-plane"></i> شارك على واتساب
+        </button>
+      </div>
+    </div>
+
+    <!-- Toast Notification -->
+    <div id="toast" class="toast-notification">
+      <i class="fas fa-check-circle"></i>
+      <span id="toast-message">تم النسخ!</span>
+    </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
