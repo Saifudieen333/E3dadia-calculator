@@ -18,7 +18,7 @@ A free E3dadia grade calculator that helps Egyptian students calculate the score
 | Platform | URL | Features |
 |----------|-----|----------|
 
-| **Netlify** | [View Live][saifudien333thanawi-calculator.netlify.app](https://thanawi-calculator.netlify.app/) | Faster loading, built-in analytics |
+| **Netlify** | [View Live][(https://e3dadia-calculator.netlify.app/)](https://E3dadia-calculator.netlify.app/) | Faster loading, built-in analytics |
 
 ## 🎯 Features
 
