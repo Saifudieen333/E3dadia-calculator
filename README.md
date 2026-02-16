@@ -13,6 +13,8 @@
 
 A free E3dadia grade calculator that helps Egyptian students calculate the score needed on final exams to reach their target overall grade.
 
+This project was created to reduce exam anxiety by replacing uncertainty with clarity.
+
 ## 🚀 Live Demos
 
 | Platform | URL | Features |
