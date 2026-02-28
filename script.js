@@ -158,7 +158,7 @@ function shareOnWhatsApp() {
   const currentUrl = window.location.href;
   const message = `حاسبة الاعدادية 🎓\nاعرف بالظبط المطلوب منك في الامتحان النهائي عشان توصل للدرجة اللي حلمت بيها!\n${currentUrl}\n\n#الاعدادية #ُE3dadia`;
 
-  const whatsappUrl = `https://wa.me/?text=${encodeURIComponent(message)}`;
+  const whatsappUrl = `https://today-study-focus.netlify.app/?text=${encodeURIComponent(message)}`;
 
   // Show toast notification
   showToast("تم فتح واتساب! شارك الرابط مع زملائك 📱");
@@ -202,4 +202,5 @@ window.calculate = function() {
       }
     }
   }, 1000);
+
 };
