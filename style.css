@@ -551,4 +551,79 @@ body {
   .counter-box span {
     font-size: 1.2rem;
   }
+
+}
+/* ========== Cross-Link Tools Section ========== */
+.more-tools-section {
+  margin: 2rem 0 1rem;
+}
+
+.tools-card {
+  background: white;
+  border-radius: 16px;
+  padding: 20px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+  border: 1px solid rgba(102, 126, 234, 0.15);
+}
+
+.tools-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 16px;
+  color: #667eea;
+  font-weight: 700;
+  font-size: 1.1rem;
+}
+
+.tools-grid {
+  display: grid;
+  gap: 12px;
+}
+
+.tool-link {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 14px 18px;
+  background: #f8f9ff;
+  border-radius: 12px;
+  text-decoration: none;
+  color: #2d3748;
+  transition: all 0.3s ease;
+  border: 2px solid transparent;
+}
+
+.tool-link:hover {
+  transform: translateX(4px);
+  border-color: #667eea;
+  background: white;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+}
+
+.tool-link i {
+  font-size: 1.4rem;
+  color: #667eea;
+  width: 28px;
+  text-align: center;
+}
+
+.tool-link strong {
+  display: block;
+  font-size: 1rem;
+  margin-bottom: 2px;
+}
+
+.tool-link small {
+  color: #666;
+  font-size: 0.85rem;
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+  .tool-link {
+    flex-direction: column;
+    text-align: center;
+  }
 }
